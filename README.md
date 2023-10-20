@@ -1,5 +1,11 @@
 This is my personal website. Feel free to take a look around!
 
+## Tech Stack
+
+- Next.js
+- React
+- Tailwind CSS
+
 ## Get Started
 
 First, run the development server:
