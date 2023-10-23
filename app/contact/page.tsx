@@ -2,15 +2,15 @@ import { ContactForm } from './contact-form'
 
 export default () => {
   return (
-    <div className="w-1/3">
+    <div className="m-5 md:w-2/2">
       <h2 className="text-sm pb-5">
         Need software building, or simply fancy a chat? Use the form below:
       </h2>
       <ContactForm />
-      <h2 className="text-lg pt-5">
+      <h2 className="text-sm py-2">
         Or alternatively find me e-hanging out at:
       </h2>
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between text-sm">
         <Row
           icon={<i className="fa fa-linkedin fa-lg" />}
           title="Linkedin"
@@ -40,7 +40,7 @@ const Row: React.FC<{
     <a
       href={link}
       target="_blank"
-      className="flex flex-row text-lg gap-2 items-center justify-center"
+      className="flex flex-row gap-2 items-center justify-center text-sm border  border-white rounded-lg p-1 px-2"
     >
       {icon}
       {title}
