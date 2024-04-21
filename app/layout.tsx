@@ -34,9 +34,7 @@ export default function RootLayout({
         <header
           className={`flex flex-row w-full justify-end ${fontMono.className}`}
         >
-          <button className="text-neon border border-neon rounded py-1 px-2 m-4">
-            Resume
-          </button>
+          <ResumeButton />
         </header>
         <div className="w-full h-full flex flex-col text-center justify-center">
           <TypedString text={'Hannah Redler'}></TypedString>
@@ -63,3 +61,14 @@ export default function RootLayout({
     </html>
   )
 }
+
+const ResumeButton: React.FC = () => (
+  <a
+    href="HANNAH_REDLER_RESUME.pdf"
+    download="hannah_redler_resume.pdf"
+    target="_blank"
+    className="text-neon border border-neon rounded py-1 px-2 m-4"
+  >
+    Resume
+  </a>
+)
