@@ -11,7 +11,7 @@ const fontPoppins = Poppins({ weight: '500', subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Hannah Redler Personal Website',
   description:
-    'Hannah Redler, freelance software engineer. Website and contact information',
+    'Hannah Redler, freelance software engineer available for work. Website and contact information',
 }
 
 export default function RootLayout({
@@ -35,7 +35,9 @@ export default function RootLayout({
         >
           <ResumeButton />
         </header>
-        <div className="flex items-center justify-center">{children}</div>
+        <div className="flex items-center justify-center flex-1">
+          {children}
+        </div>
         <footer className="absolute bottom-0 w-screen"></footer>
       </body>
     </html>

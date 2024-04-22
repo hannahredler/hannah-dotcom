@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Poppins } from 'next/font/google'
-const fontPoppins = Poppins({ weight: '500', subsets: ['latin'] })
 
 export const TypedString: React.FC<{ text: string }> = ({ text }) => {
   const [writtenString, setWrittenString] = useState('')
 
   useEffect(() => {
+    setWrittenString('')
+
     const words = text.split(' ')
 
     let nSeconds = 0
@@ -44,7 +44,7 @@ export const TypedString: React.FC<{ text: string }> = ({ text }) => {
   }, [])
   return (
     <h1
-      className={`uppercase text-[60px] text-black tracking-widest font-outline-2`}
+      className={`uppercase text-3xl ml-4 text-black tracking-widest font-outline-2`}
     >
       {writtenString}
       <span id="typing-caret" className="text-neon font-thin animate-blink">
