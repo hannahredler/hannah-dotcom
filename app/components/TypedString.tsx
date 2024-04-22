@@ -17,7 +17,6 @@ export const TypedString: React.FC<{ text: string }> = ({ text }) => {
         if (j < 2) nSeconds += 300
         else nSeconds += 100
 
-        console.log('nSeconds', nSeconds, word[j])
         setTimeout(() => {
           setWrittenString((prev) => {
             return prev + word[j]

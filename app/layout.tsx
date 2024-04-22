@@ -1,17 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-
-import { PT_Mono } from 'next/font/google'
-import { Poppins } from 'next/font/google'
-
+import { fontPoppins, fontMono } from './utils/fonts'
 import Script from 'next/script'
-const fontMono = PT_Mono({ weight: '400', subsets: ['latin'] })
-const fontPoppins = Poppins({ weight: '500', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Hannah Redler Personal Website',
   description:
-    'Hannah Redler, freelance software engineer available for work. Website and contact information',
+    'Hannah Redler, freelance frontend, backend and full stack software engineer available for work. Website and contact information',
 }
 
 export default function RootLayout({
@@ -21,12 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <Script
-          src="https://kit.fontawesome.com/9c7bdda2d6.js"
-          crossOrigin="anonymous"
-        ></Script>
-      </head>
+      <head></head>
       <body
         className={`flex flex-col box-border min-h-screen  bg-[#030d1c] text-[rgb(210,213,221)] ${fontPoppins.className}`}
       >
@@ -46,7 +36,7 @@ export default function RootLayout({
 
 const ResumeButton: React.FC = () => (
   <a
-    href="HANNAH_REDLER_RESUME.pdf"
+    href="resume.pdf"
     download="hannah_redler_resume.pdf"
     target="_blank"
     className="text-neon border border-neon rounded py-1 px-2 m-4"
