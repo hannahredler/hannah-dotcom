@@ -39,6 +39,7 @@ const ResumeButton: React.FC = () => (
     download="hannah_redler_resume.pdf"
     target="_blank"
     className="text-neon border border-neon rounded py-1 px-2 m-4 hover:shadow-buttonGlow"
+    aria-label="Download resume"
   >
     Resume
   </a>

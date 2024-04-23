@@ -9,13 +9,25 @@ const Home: React.FC = () => {
         <TypedString />
         <h2 className="text-[#8892af] mt-1">Software Engineer</h2>
         <div className="flex flex-row w-full justify-center gap-5 p-2">
-          <a href="https://www.linkedin.com/in/hannah-redler/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/hannah-redler/"
+            target="_blank"
+            aria-label="Navigate to Linkedin"
+          >
             <LinkedinIcon className={iconClass} />
           </a>
-          <a href="https://github.com/hannahredler" target="_blank">
+          <a
+            href="https://github.com/hannahredler"
+            target="_blank"
+            aria-label="Navigate to Github"
+          >
             <GithubIcon className={iconClass} />
           </a>
-          <a href="https://medium.com/@hannahjredler" target="_blank">
+          <a
+            href="https://medium.com/@hannahjredler"
+            target="_blank"
+            aria-label="Navigate to Medium"
+          >
             <MediumIcon className={iconClass} />
           </a>
         </div>
