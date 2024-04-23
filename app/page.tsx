@@ -7,9 +7,8 @@ const Home: React.FC = () => {
     <>
       <div className="w-full flex-col text-center justify-center items-stretch -mt-80">
         <TypedString text={'Hannah Redler'}></TypedString>
-        <h2 className="text-[#8892af]">Software Engineer</h2>
-
-        <div className="flex flex-row w-full justify-center gap-5 p-3">
+        <h2 className="text-[#8892af] mt-1">Software Engineer</h2>
+        <div className="flex flex-row w-full justify-center gap-5 p-2">
           <a href="https://www.linkedin.com/in/hannah-redler/" target="_blank">
             <LinkedinIcon className={iconClass} />
           </a>
