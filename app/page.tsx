@@ -2,7 +2,7 @@ import { TypedString } from './components/TypedString'
 import { GithubIcon, LinkedinIcon, MediumIcon } from './utils/icons'
 
 const Home: React.FC = () => {
-  const iconClass = 'text-neon text-sm h-7'
+  const iconClass = 'text-neon text-sm h-7 hover:animate-spin'
   return (
     <>
       <div className="w-full flex-col text-center justify-center items-stretch -mt-80">

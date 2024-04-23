@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         neon: '#64ffda',
       },
+      boxShadow: {
+        buttonGlow: '0 0 10px 0 #64ffda',
+      },
       keyframes: {
         blink: {
           '0%, 100%': { visibility: 'hidden' },

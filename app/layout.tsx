@@ -38,7 +38,7 @@ const ResumeButton: React.FC = () => (
     href="resume.pdf"
     download="hannah_redler_resume.pdf"
     target="_blank"
-    className="text-neon border border-neon rounded py-1 px-2 m-4"
+    className="text-neon border border-neon rounded py-1 px-2 m-4 hover:shadow-buttonGlow"
   >
     Resume
   </a>
