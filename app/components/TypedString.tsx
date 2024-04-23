@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from 'react'
 
-export const TypedString: React.FC<{ text: string }> = ({ text }) => {
+export const TypedString: React.FC = () => {
   const [writtenString, setWrittenString] = useState('')
 
   useEffect(() => {
     setWrittenString('')
 
-    const words = text.split(' ')
+    const words = 'Hannah Redler'.split(' ')
 
     let nSeconds = 0
     for (let i = 0; i < words.length; i++) {

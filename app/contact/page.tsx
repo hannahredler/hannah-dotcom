@@ -1,6 +1,6 @@
 import { ContactForm } from './contact-form'
 
-export default () => {
+const Contact = () => {
   return (
     <div className="m-5 md:w-2/2">
       <h2 className="text-sm pb-5">
@@ -47,3 +47,5 @@ const Row: React.FC<{
     </a>
   )
 }
+
+export default Contact
