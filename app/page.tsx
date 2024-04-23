@@ -1,7 +1,7 @@
 import { TypedString } from './components/TypedString'
 import { GithubIcon, LinkedinIcon, MediumIcon } from './utils/icons'
 
-export default function Home() {
+const Home: React.FC = () => {
   const iconClass = 'text-neon text-sm h-7'
   return (
     <>
@@ -24,3 +24,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home

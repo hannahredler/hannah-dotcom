@@ -2,25 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* --foreground-rgb: 255, 255, 255; */
-  /* --background-start-rgb: 187, 169, 141; */
-  /* --background-end-rgb: 224, 214, 199; */
-}
-
-/*  TODO: Dark/light mode? */
-
-body {
-  /* color: rgb(var(--foreground-rgb)); */
-  /* background: linear-gradient( */
-  /* to top, */ /* rgb(var(--background-start-rgb)), */
-  /* rgb(var(--background-end-rgb)) */
-  /* ); */
-  /* background: #bdab91; */
-  /* color: #52452e; */
-  /* rgb(var(--background-start-rgb)); */
-}
-
 @layer base {
   .font-outline-2 {
     padding: 0px;

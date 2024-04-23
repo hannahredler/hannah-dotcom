@@ -1,7 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { fontPoppins, fontMono } from './utils/fonts'
-import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Hannah Redler Personal Website',
@@ -15,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html className="dark" lang="en">
       <head></head>
       <body
         className={`flex flex-col box-border min-h-screen  bg-[#030d1c] text-[rgb(210,213,221)] ${fontPoppins.className}`}
