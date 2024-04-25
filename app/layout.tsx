@@ -17,7 +17,7 @@ export default function RootLayout({
     <html className="dark" lang="en">
       <head></head>
       <body
-        className={`flex flex-col box-border min-h-screen  bg-[#030d1c] text-[rgb(210,213,221)] ${fontPoppins.className}`}
+        className={`flex flex-col box-border min-h-screen mx-auto max-w-[1200px]  bg-darkBlue text-lightGrey ${fontPoppins.className}`}
       >
         <header
           className={`flex flex-row w-full justify-end ${fontMono.className}`}

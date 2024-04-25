@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         neon: '#64ffda',
+        darkBlue: '#030d1c',
+        lightGrey: '#d2d5dd',
       },
       boxShadow: {
         buttonGlow: '0 0 10px 0 #64ffda',
