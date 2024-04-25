@@ -5,7 +5,7 @@ import { fontPoppins, fontMono } from './utils/fonts'
 export const metadata: Metadata = {
   title: 'Hannah Redler Personal Website',
   description:
-    'Hannah Redler, freelance frontend, backend and full stack software engineer available for work. Website and contact information',
+    'Hannah Redler, freelance frontend, backend and full stack software engineer available for work. Website and contact information.',
 }
 
 export default function RootLayout({
