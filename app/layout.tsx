@@ -35,10 +35,10 @@ export default function RootLayout({
 
 const ResumeButton: React.FC = () => (
   <a
-    href="resume.pdf"
+    href="HANNAH_REDLER_RESUME.pdf"
     download="hannah_redler_resume.pdf"
     target="_blank"
-    className="text-neon border border-neon rounded py-1 px-2 m-4 hover:shadow-buttonGlow"
+    className="text-neon border border-neon rounded py-1 px-2 m-4 hover:shadow-buttonGlow transition ease-in-out delay-600"
     aria-label="Download resume"
   >
     Resume
