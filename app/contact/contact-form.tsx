@@ -1,6 +1,6 @@
 'use client'
 
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent, useEffect, useState } from 'react'
 import { sendEmail } from '../api'
 
 export const ContactForm = () => {
@@ -8,6 +8,7 @@ export const ContactForm = () => {
   const [email, onEmailChange] = useState('')
   const [message, onMessageChange] = useState('')
 
+  const [isValid, onCheckIfValid] = useState(false)
   const [isLoading, onIsLoading] = useState(false)
   const handleUserInput = (event: ChangeEvent<HTMLInputElement>) => {
     event.preventDefault()
@@ -15,12 +16,12 @@ export const ContactForm = () => {
     onEmailChange(rawText)
   }
 
-  const checkValidity = (name: string, email: string, message: string) => {
-    return !!name && !!email && !!message
-  }
+  useEffect(() => {
+    onCheckIfValid(!!name && !!email && !!message)
+  }, [name, email, message])
 
   return (
-    <div className="p-3 border border-1">
+    <div className="p-3 border border-1 border-neon rounded">
       <form className="flex flex-col gap-1 w-full">
         <div className="flex flex-row gap-2 w-full justify-between">
           <FormField title="* Your name">
@@ -36,7 +37,7 @@ export const ContactForm = () => {
               }}
             />
           </FormField>
-          <FormField title="* Email address">
+          <FormField title="Email address">
             <input
               className="rounded p-1 text-xs border border-1 w-full"
               placeholder="Whats your email"
@@ -46,7 +47,7 @@ export const ContactForm = () => {
             />
           </FormField>
         </div>
-        <FormField title="* Message">
+        <FormField title="Message">
           <textarea
             className="rounded p-2 text-xs border border-1 h-20"
             value={message}
@@ -60,7 +61,7 @@ export const ContactForm = () => {
         <div className="flex justify-center mt-2">
           <button
             className="border rounded-lg w-fit px-3 py-2 items-center text-xs"
-            disabled={!checkValidity(name, email, message)}
+            disabled={!isValid}
             onClick={async (e) => {
               e.preventDefault()
               onIsLoading(true)
