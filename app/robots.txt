@@ -1,3 +1,3 @@
 User-Agent: *
 Disallow:
-Sitemap: https://hannahredler.xyz/sitemap.xml
+Sitemap: https://hannahredler.xyz/sitemap2.xml
