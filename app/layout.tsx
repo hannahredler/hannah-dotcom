@@ -3,9 +3,9 @@ import type { Metadata } from 'next'
 import { fontPoppins, fontMono } from './utils/fonts'
 
 export const metadata: Metadata = {
-  title: 'Hannah Redler Personal Website',
+  title: 'Hannah Redler - Software Engineer',
   description:
-    'Hannah Redler, freelance frontend, backend and full stack software engineer available for work. Website and contact information.',
+    'Hannah Redler, freelance full-stack software engineer. Website and contact information.',
 }
 
 export default function RootLayout({
