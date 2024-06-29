@@ -1,5 +1,10 @@
 import { TypedString } from './components/TypedString'
-import { GithubIcon, LinkedinIcon, MediumIcon } from './utils/icons'
+import {
+  GithubIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  MediumIcon,
+} from './utils/icons'
 
 const Home: React.FC = () => {
   const iconClass = 'text-neon text-sm h-7 hover:animate-spin'
@@ -29,6 +34,13 @@ const Home: React.FC = () => {
             aria-label="Navigate to Medium"
           >
             <MediumIcon className={iconClass} />
+          </a>
+          <a
+            href="https://www.instagram.com/madebyhumans__/"
+            target="_blank"
+            aria-label="Navigate to Instagram"
+          >
+            <InstagramIcon className={iconClass} />
           </a>
         </div>
       </div>
