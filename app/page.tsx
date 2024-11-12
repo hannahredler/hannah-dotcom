@@ -1,3 +1,4 @@
+import { SocialButton } from './components/SocialButton'
 import { TypedString } from './components/TypedString'
 import {
   GithubIcon,
@@ -14,34 +15,26 @@ const Home: React.FC = () => {
         <TypedString />
         <h2 className="text-[#8892af] mt-1">Software Engineer</h2>
         <div className="flex flex-row w-full justify-center gap-5 p-2">
-          <a
-            href="https://www.linkedin.com/in/hannah-redler/"
-            target="_blank"
-            aria-label="Navigate to Linkedin"
-          >
-            <LinkedinIcon className={iconClass} />
-          </a>
-          <a
-            href="https://github.com/hannahredler"
-            target="_blank"
-            aria-label="Navigate to Github"
-          >
-            <GithubIcon className={iconClass} />
-          </a>
-          <a
-            href="https://medium.com/@hannahjredler"
-            target="_blank"
-            aria-label="Navigate to Medium"
-          >
-            <MediumIcon className={iconClass} />
-          </a>
-          <a
-            href="https://www.instagram.com/madebyhumans__/"
-            target="_blank"
-            aria-label="Navigate to Instagram"
-          >
-            <InstagramIcon className={iconClass} />
-          </a>
+          <SocialButton
+            link="https://www.linkedin.com/in/hannah-redler/"
+            ariaLabel="Navigate to Linkedin"
+            icon={<LinkedinIcon className={iconClass} />}
+          />
+          <SocialButton
+            link="https://github.com/hannahredler"
+            ariaLabel="Navigate to Github"
+            icon={<GithubIcon className={iconClass} />}
+          />
+          <SocialButton
+            link="https://medium.com/@hannahjredler"
+            ariaLabel="Navigate to Medium"
+            icon={<MediumIcon className={iconClass} />}
+          />
+          <SocialButton
+            link="https://www.instagram.com/madebyhumans__/"
+            ariaLabel="Navigate to Instagram"
+            icon={<InstagramIcon className={iconClass} />}
+          />
         </div>
       </div>
     </>
